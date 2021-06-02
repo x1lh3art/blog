@@ -14,6 +14,9 @@ body {
   line-height: 1.5;
   font-family: $font-serif;
   font-size: 20px;
+  background: linear-gradient(to right top, #d2ffdb, #ffffff);
+  background-size: cover;
+  background-attachment: fixed;
 
   @media (max-width: $max-width-sm) {
     padding-top: 1rem;
