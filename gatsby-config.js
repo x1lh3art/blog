@@ -29,14 +29,33 @@ const gastbySourcePrismicConfig = {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Prismic Blog',
-    description: 'Blog example for Gatsby & Prismic',
-    author: '@levimykel',
+    title: 'Dollarpedia',
+    description: 'Your home for $$$',
+    author: 'Admin',
   },
   plugins: [
     gastbySourcePrismicConfig,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Lato",
+              variants: ["300", "400", "700", "900"],
+              fontDisplay: 'swap',
+              strategy: 'selfHosted'
+            },
+          ],
+        },
+        formats: ['woff2'],
+        useMinify: true,
+        //usePreload: true,
+        usePreconnect: false,
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

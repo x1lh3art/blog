@@ -31,12 +31,6 @@ const Layout = ({ data, children }) => {
         <meta charSet="utf-8" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin></link>
-        <link
-          href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
-          rel="stylesheet"
-          type="text/css"
-        />
       </Helmet>
       <main>{children}</main>
       <Footer />
