@@ -18,7 +18,7 @@ const gastbySourcePrismicConfig = {
     repositoryName: reponame,
     accessToken: apiKey,
     releaseID: prismicReleaseID,
-    prismicToolbar: true,
+    prismicToolbar: false,
     linkResolver: () => (doc) => linkResolver(doc),
     schemas: {
       blogHome: blogHomeSchema,
